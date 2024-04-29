@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search and Navigation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">RecommendationEngine</a></li>
+                <li><a href="/" style="color:white; margin-left:3rem;">Home</a></li>
+                <li><a href="/movies" style="color:white;">Movies</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="heading">
+            <h2>Content Based Recommendation </h2>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search">
+            <button id="searchBtn"class="search-btn">Search</button>
+        </div>
+        <div id="my-content" class="lds-roller" style="display:none;"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+       
+            <div class="card-container">
+              </div>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

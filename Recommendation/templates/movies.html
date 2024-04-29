@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card Grid</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='movies.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">RecommendationEngine</a></li>
+                <li><a href="/" style="color:white; margin-left:3rem;">Home</a></li>
+                <li><a href="/movies" style="color:white;">Movies</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    <main>
+  <div class="card-container">
+    </div><main>
+
+  <script src="{{ url_for('static', filename='movie.js') }}"></script>
+</body>
+</html>
